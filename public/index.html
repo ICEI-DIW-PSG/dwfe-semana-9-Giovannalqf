@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>Sabor Local - Guia de Restaurantes & Pratos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Sabor Local 🍽️</h1>
+        <p>Encontre os melhores pratos da cidade</p>
+    </header>
+
+    <main>
+        <section class="controls">
+            <input type="text" id="search" placeholder="Buscar por prato...">
+            <select id="category"></select>
+            <button id="btnRender">Recarregar Menu</button>
+        </section>
+
+        <section class="shop-container">
+            <div id="product-list"></div>
+            <div id="product-details">
+                <p class="placeholder-text">Clique em "Ver detalhes" para abrir a receita, tempo de preparo e o restaurante.</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
